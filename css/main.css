@@ -10,6 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/* FONT */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+
 html,
 button,
 input,
@@ -103,11 +107,16 @@ body {
 }
 
 header {
-    position: absolute;
-    top: 0;
-    height: 70px;
-    width: 100%;
-    z-index: 99;
+    font-family: 'PT Sans', sans-serif;
+  position: absolute;
+top: 0;
+height: 40px;
+width: 100%;
+z-index: 99;
+background-color: #333;
+color: #fff;
+padding: 1em;
+border-bottom: 3px solid #eee;
 }
 
 header > #logo {
@@ -116,8 +125,10 @@ header > #logo {
 }
 
 header > #search {
-    float: right;
     font-size: 1.5em;
+    float: left;
+margin: 0 50%;
+position: absolute;
 }
 
 #map {
