@@ -1,5 +1,5 @@
 var map = L.map('map').
-    setView([37.39103, -5.99579], 9);
+    setView([37.39103, -5.99579], 15);
 
 // OFFICIAL http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 // BASIC http://{s}.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png
