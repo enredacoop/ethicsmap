@@ -14,22 +14,23 @@ var geojsonMarkerOptions = {
     radius: 10,
     weight: 1,
     opacity: 1,
-    fillOpacity: 0.8
+    fillOpacity: 0.8,
+    color: "#111", fillColor: "#ffaa00"
 };
 
 L.geoJson(sevilla, {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
     },
-    style: function(feature) {
-        switch (feature.properties.category) {
-            case 'good': return {color: "#111", fillColor: "#ffaa00"};
-            case 'bad':   return {color: "#111", fillColor: "#ccc"};
-        }
-    },
-    filter: function(feature, layer) {
-        return feature.properties.category == $('#select-category').val();
-    }
+    // style: function(feature) {
+    //     switch (feature.properties.category) {
+    //         case 'good': return {color: "#111", fillColor: "#ffaa00"};
+    //         case 'bad':   return {color: "#111", fillColor: "#ccc"};
+    //     }
+    // },
+    // filter: function(feature, layer) {
+    //     return feature.properties.category == $('#select-category').val();
+    // }
 }).addTo(map);
 
 var marker = L.marker([37.39103, -5.99579],{name: "Demo", draggable: true}).addTo(map);
