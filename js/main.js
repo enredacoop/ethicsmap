@@ -32,15 +32,20 @@ L.geoJson(sevilla, {
     //     }
     // },
     onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties.name);
+        // layer.bindPopup(feature.properties.name);
     },
     // filter: function(feature, layer) {
     //     return feature.properties.cat == $('#select-category').val();
     // }
-}).addTo(map);
+})
+.on('click', function(d) {
+    // alert(d.layer.feature.properties.name);
+    $('#content-box').show();
+})
+.addTo(map);
 
-$('#map g').click(function(d) {
-    //
+$('#content-box #close').click(function() {
+    $('#content-box').hide();
 });
 
 
