@@ -34,89 +34,81 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Ethics Map</a>
+            <a class="navbar-brand" href="#"><b>Ethics Map / </b></a>
           </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">FAQ</a></li>
+              <!-- <li><a href="#">FAQ</a></li> -->
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cities <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown">Cities <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Sevilla</a></li>
-                
                   <li><a href="#">Others</a></li>
                 </ul>
               </li>
             </ul>
            
-            <ul class="nav navbar-nav navbar-center">
+            <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a>   </li>
-                  <li><a href="#">Another action</a>   </li>
-                  <li><a href="#">Something else here</a>   </li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">Foods</a></li>
+                  <li><a href="#">Vegetables</a></li>
+                  <li><a href="#">Drinks</a></li>
+                  <li><a href="#">Books</a></li>
                 </ul>
               </li>
             </ul>
           
            
-            <form class="navbar-form navbar-left">
+            <!-- <form class="navbar-form navbar-left">
               <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
+            </form> -->
           </div>
         </div>
-  
-
-<!-- FICHA -->
-        <div class="container col-md-6  ficha on">
-            <ul class="breadcrumb" style="margin-bottom: 5px;">
-              <li><a href="#">Sevilla</a></li>
-              <li><a href="#">Categoría</a></li>
-              <li class="active">Nombre</li>
-            </ul>
-
-           <h1> NOMBRE </h1> 
-        <div class="row">
-           <div class="col-md-4">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <span class="glyphicon glyphicon-phone"></span>
-                telefono
-              </li>
-              <li class="list-group-item">
-                <span class="glyphicon glyphicon-link"></span>
-               url.....
-              </li>
-              <li class="list-group-item">
-                <span class="glyphicon glyphicon-search"></span>
-               ddsdsdsdsd
-              </li>
-            </ul>
-           </div>
-           <div class="col-md-8">
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-           <h3>Dirección</h3>
-           <p>Tags:
-           <span class="label label-default">Default</span>
-            <span class="label label-primary">Primary</span>
-            <span class="label label-success">Success</span>
-            <span class="label label-warning">Warning</span>
-            <span class="label label-danger">Danger</span>
-            <span class="label label-info">Info</span></p>
-        </div>   
-                  <button type="button" class="btn btn-default">CLOSE</button> <!-- Cerrar ficha -->
-                <button type="button" class="btn btn-primary">OTHER</button> <!-- IR a otro de la misma categoria  -->
-                <button type="button" class="btn btn-success">CERCA</button> <!-- Ir a otro comercio cercano  -->
-                       
-        </div>
-<!-- FICHA FIN -->
 
         <div id="map" class="dark"></div>
-        <div id="content-box">
-            <a id="close" href="#">close</a>
+        
+        <div id="content-box" class="container col-md-6  ficha on">
+          <ul class="breadcrumb" style="margin-bottom: 5px;">
+            <li><a href="#">Sevilla</a></li>
+            <li><a href="#">Categoría</a></li>
+            <li class="active">Nombre</li>
+          </ul>
+
+          <h1> NOMBRE </h1>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-group">
+                <li class="list-group-item">
+                <span class="glyphicon glyphicon-phone"></span>
+                telefono
+                </li>
+                <li class="list-group-item">
+                <span class="glyphicon glyphicon-link"></span>
+                  url.....
+                </li>
+                <li class="list-group-item">
+                  <span class="glyphicon glyphicon-search"></span>
+                  ddsdsdsdsd
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <h3>Dirección</h3>
+              <p>Tags:
+              <span class="label label-default">Default</span>
+              <span class="label label-primary">Primary</span>
+              <span class="label label-success">Success</span>
+              <span class="label label-warning">Warning</span>
+              <span class="label label-danger">Danger</span>
+              <span class="label label-info">Info</span></p>
+            </div>   
+            <button id="close" type="button" class="btn btn-default">CLOSE</button> <!-- Cerrar ficha -->
+            <button type="button" class="btn btn-primary">OTHER</button> <!-- IR a otro de la misma categoria  -->
+            <button type="button" class="btn btn-success">CERCA</button> <!-- Ir a otro comercio cercano  -->             
+          </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
