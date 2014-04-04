@@ -106,31 +106,6 @@ body {
     margin: 0;*/
 }
 
-header {
-    font-family: 'PT Sans', sans-serif;
-  position: absolute;
-top: 0;
-height: 40px;
-width: 100%;
-z-index: 99;
-background-color: #333;
-color: #fff;
-padding: 1em;
-border-bottom: 3px solid #eee;
-}
-
-header > #logo {
-    float: left;
-    font-size: 2em;
-}
-
-header > #search {
-    font-size: 1.5em;
-    float: left;
-margin: 0 50%;
-position: absolute;
-}
-
 #map {
     /*min-height: 100%;
     background-color: blue;*/
@@ -138,7 +113,6 @@ position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    top: 70px;
     background: rgba(125,150,175,0.7);
     z-index: 10;
 }
@@ -151,7 +125,21 @@ position: absolute;
     z-index: 99;
 }
 
+.ficha {
+   
+    background-color: #F7F5F5;
+}
 
+.on {
+height: 420px;
+position: absolote;
+z-index: 20;
+}
+
+.navbar  {
+margin-bottom: 0px !important;
+
+}
 
 
 
