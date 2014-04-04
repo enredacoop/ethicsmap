@@ -1,0 +1,15 @@
+var sevilla = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature", 
+            "properties": { "title": "Trainers", "placename": "Oceanside, CA.", category: "good"}, 
+            "geometry": { "type": "Point", "coordinates": [ 37.39, -5.995 ] }
+        },
+        {
+            "type": "Feature", 
+            "properties": { "title": "Trainers", "placename": "Milford, DE.", category: "bad"}, 
+            "geometry": { "type": "Point", "coordinates": [ 37.391, -5.996 ] }
+        }
+    ]
+}
