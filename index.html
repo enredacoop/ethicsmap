@@ -72,42 +72,38 @@
         <div id="content-box" class="container col-md-6  ficha on">
           <ul class="breadcrumb" style="margin-bottom: 5px;">
             <li><a href="#">Sevilla</a></li>
-            <li><a href="#">Categoría</a></li>
-            <li class="active">Nombre</li>
+            <!-- <li><a href="#">Category</a></li> -->
+            <li class="active" id="name-breadcrumb"></li>
           </ul>
 
-          <h1> NOMBRE </h1>
+
+          <h1 id="name"></h1>
           <div class="row">
             <div class="col-md-4">
               <ul class="list-group">
                 <li class="list-group-item">
                 <span class="glyphicon glyphicon-phone"></span>
-                telefono
+                <span id="phone"></span>
                 </li>
                 <li class="list-group-item">
                 <span class="glyphicon glyphicon-link"></span>
-                  url.....
+                  <span id="url"></span>
                 </li>
                 <li class="list-group-item">
-                  <span class="glyphicon glyphicon-search"></span>
-                  ddsdsdsdsd
+                  <span class="glyphicon glyphicon-envelope"></span>
+                  <span id="mail"></span>
                 </li>
               </ul>
+            <button id="other" type="button" class="btn btn-primary">OTHER</button> <!-- IR a otro de la misma categoria  -->
+            <button id="nearby" type="button" class="btn btn-success">NEARBY</button> <!-- Ir a otro comercio cercano  -->
             </div>
             <div class="col-md-8">
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h3>Dirección</h3>
-              <p>Tags:
-              <span class="label label-default">Default</span>
-              <span class="label label-primary">Primary</span>
-              <span class="label label-success">Success</span>
-              <span class="label label-warning">Warning</span>
-              <span class="label label-danger">Danger</span>
-              <span class="label label-info">Info</span></p>
-            </div>   
-            <button id="close" type="button" class="btn btn-default">CLOSE</button> <!-- Cerrar ficha -->
-            <button type="button" class="btn btn-primary">OTHER</button> <!-- IR a otro de la misma categoria  -->
-            <button type="button" class="btn btn-success">CERCA</button> <!-- Ir a otro comercio cercano  -->             
+              <p id="des"></p>
+              <h3 id="direccion"></h3>
+              <span id="cat" class="label label-warning"></span>
+              <br><br><br>
+              <button id='close' type='button' class='btn'><i class='glyphicon glyphicon-remove-circle'></i> Close</button>
+            </div>
           </div>
         </div>
 

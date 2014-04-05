@@ -153,6 +153,14 @@ body {
     -moz-box-shadow: 0 4px 2px -2px #000;
 }
 
+h1 {
+    font-weight: bolder;
+}
+
+#close {
+    float: right;
+}
+
 
 
 

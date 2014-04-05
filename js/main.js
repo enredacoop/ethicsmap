@@ -16,7 +16,9 @@ var geojsonMarkerOptions = {
     radius: 10,
     weight: 1,
     opacity: 1,
-    fillOpacity: 0.8
+    fillOpacity: 0.8,
+    color: '#F80000',
+    fillColor: '#F80000'
 };
 
 L.geoJson(sevilla, {
@@ -39,15 +41,29 @@ L.geoJson(sevilla, {
     // }
 })
 .on('click', function(d) {
-    // alert(d.layer.feature.properties.name);
+    $('#name-breadcrumb').text(d.layer.feature.properties.name);
+    $('#name').html(d.layer.feature.properties.name);
+    $('#des').text(d.layer.feature.properties.des);
+    $('#cat').text(d.layer.feature.properties.cat);
+    $('#direccion').html("<span class='glyphicon glyphicon-map-marker'></span> " + d.layer.feature.properties.dire + " - " + d.layer.feature.properties.localidad + "(" + d.layer.feature.properties.provincia + ")");
+    $('#phone').text(d.layer.feature.properties.phone);
+    $('#url').html("<a href='" + d.layer.feature.properties.url + "' target='_blank'>" + d.layer.feature.properties.url + "</a>");
+    $('#mail').html("<a href='mailto:" + d.layer.feature.properties.mail + "' target='_blank'>" + d.layer.feature.properties.mail + "</a>");
     $('#content-box').show();
 })
 .addTo(map);
 
-$('#content-box #close').click(function() {
+$('#close').click(function() {
     $('#content-box').hide();
 });
 
+$('#other').click(function() {
+    alert("This action will show you places in the same category #cooperation");
+});
+
+$('#nearby').click(function() {
+    alert("This action will show you places nearby from the current place #cooperation");
+});
 
 // if('geolocation' in navigator){
 //    navigator.geolocation.getCurrentPosition(success);
