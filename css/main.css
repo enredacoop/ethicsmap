@@ -161,7 +161,7 @@ h1 {
     float: right;
 }
 
-.content-box {
+#content-box {
     overflow: scroll;
 }
 
