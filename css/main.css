@@ -117,7 +117,7 @@ body {
     z-index: 10;
 }
 
-#content-box {
+#content-box, #about-box {
     height: 75%;
     width: 75%;
     margin: auto;
@@ -137,6 +137,10 @@ body {
     background-color: #F7F5F5;
 }
 
+.about {
+    background-color: #222222;
+    color: #fff;
+}
 .on {
     height: 420px;
     position: absolote;

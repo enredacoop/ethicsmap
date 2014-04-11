@@ -57,6 +57,14 @@ $('#close').click(function() {
     $('#content-box').hide();
 });
 
+$('#about-link').click(function() {
+    $('#about-box').show();
+});
+
+$('#about-close').click(function() {
+    $('#about-box').hide();
+});
+
 $('#other').click(function() {
     alert("This action will show you places in the same category #cooperation");
 });
@@ -64,6 +72,8 @@ $('#other').click(function() {
 $('#nearby').click(function() {
     alert("This action will show you places nearby from the current place #cooperation");
 });
+
+
 
 // if('geolocation' in navigator){
 //    navigator.geolocation.getCurrentPosition(success);
