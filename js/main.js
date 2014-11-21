@@ -7,7 +7,7 @@ var map = L.map('map').
 // GEOGRAPHIC: http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png
 // http://{s}.tile.cloudmade.com/9067860284bc491e92d2342cc51d47d9/998/256/{z}/{x}/{y}.png
 
-L.tileLayer('http://{s}.tile.cloudmade.com/9067860284bc491e92d2342cc51d47d9/998/256/{z}/{x}/{y}.png', {
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href=”http://openstreetmap.org”>OpenStreetMap</a> contributors, <a href=”http://creativecommons.org/licenses/by-sa/2.0/”>CC-BY-SA</a>, Imagery © <a href=”http://cloudmade.com”>CloudMade</a>',
     maxZoom: 18
 }).addTo(map);
